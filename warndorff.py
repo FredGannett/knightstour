@@ -40,7 +40,7 @@ def getMovesHeuristic(board, w, h, x, y):
             choices.append(((nx, ny), countMoves(board, w, h, nx, ny)))
     # sort the position by their heuristic
     choices.sort(key=lambda x: x[1])
-    # strip the heuristic and the return
+    # strip the heuristic and then return
     # the result
     return [m for (m, _) in choices]
 

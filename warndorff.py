@@ -1,6 +1,6 @@
 import sys
-# Allow for more recursion
-sys.setrecursionlimit(100000)
+# Allow for much more recursion to avoid failures on 50*50 and 70*70
+sys.setrecursionlimit(2000000)
 from timeit import default_timer as timer
 
 def printBoard(board, w, h):
